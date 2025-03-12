@@ -6,7 +6,7 @@ export default function Balloons() {
   const positionY = useSharedValue(500); // Bắt đầu từ vị trí dưới màn hình
 
   useEffect(() => {
-    positionY.value = withTiming(-100, { duration: 3000 }); // Bay lên trên trong 3 giây
+    positionY.value = withTiming(-1000, { duration: 2000 }); // Bay lên trên trong 3 giây
   }, []);
 
   const animatedStyle = useAnimatedStyle(() => ({
